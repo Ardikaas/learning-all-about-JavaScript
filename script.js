@@ -1,30 +1,72 @@
+var hasil = 0; 
+
 function one(){
-  document.getElementById("ansbar").innerHTML += "1";
+  document.getElementById("angka").innerHTML += "1";
 }
 function two(){
-  document.getElementById("ansbar").innerHTML += "2";
+  document.getElementById("angka").innerHTML += "2";
 }
 function three(){
-  document.getElementById("ansbar").innerHTML += "3";
+  document.getElementById("angka").innerHTML += "3";
 }
 function four(){
-  document.getElementById("ansbar").innerHTML += "4";
+  document.getElementById("angka").innerHTML += "4";
 }
 function five(){
-  document.getElementById("ansbar").innerHTML += "5";
+  document.getElementById("angka").innerHTML += "5";
 }
 function six(){
-  document.getElementById("ansbar").innerHTML += "6";
+  document.getElementById("angka").innerHTML += "6";
 }
 function seven(){
-  document.getElementById("ansbar").innerHTML += "7";
+  document.getElementById("angka").innerHTML += "7";
 }
 function eight(){
-  document.getElementById("ansbar").innerHTML += "8";
+  document.getElementById("angka").innerHTML += "8";
 }
 function nine(){
-  document.getElementById("ansbar").innerHTML += "9";
+  document.getElementById("angka").innerHTML += "9";
 }
 function zero(){
-  document.getElementById("ansbar").innerHTML += "0";
+  document.getElementById("angka").innerHTML += "0";
+}
+function comma(){
+  document.getElementById("angka").innerHTML += ".";
+}
+function sum(){
+  var x = document.getElementById("angka").innerHTML;
+  document.getElementById("operasi").innerHTML = "+";
+  document.getElementById("angka").innerHTML = "";
+  var pisah = parseFloat(x);
+  hasil += pisah;
+  document.getElementById("total").innerHTML = hasil;
+}
+function subtract(){
+  var x = document.getElementById("angka").innerHTML;
+  document.getElementById("operasi").innerHTML = "-";
+  document.getElementById("angka").innerHTML = "";
+  var pisah = parseFloat(x);
+  hasil -= pisah;
+  document.getElementById("total").innerHTML = hasil;
+}
+function time(){
+  var x = document.getElementById("angka").innerHTML;
+  document.getElementById("operasi").innerHTML = "*";
+  document.getElementById("angka").innerHTML = "";
+  var pisah = parseFloat(x);
+  hasil *= pisah;
+  document.getElementById("total").innerHTML = hasil;
+}
+function divide(){
+  var x = document.getElementById("angka").innerHTML;
+  document.getElementById("operasi").innerHTML = "/";
+  document.getElementById("angka").innerHTML = "";
+  var pisah = parseFloat(x);
+  hasil /= pisah;
+  document.getElementById("total").innerHTML = hasil;
+}
+function ambil(){
+  document.getElementById("angka").innerHTML = "";
+  document.getElementById("operasi").innerHTML = "";
+  document.getElementById("total").innerHTML = hasil;
 }
