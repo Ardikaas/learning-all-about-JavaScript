@@ -19,6 +19,6 @@ It's worth noting that JavaScript is distinct from Java, despite the similar nam
 
 
 ## url
-well..
-i've just made simple calculator (sadly it still have bugs :')
+well..__
+i've just made simple calculator (sadly it still have bugs :')__
 check this out : https://ardikaas.github.io/learning-all-about-JavaScript/
