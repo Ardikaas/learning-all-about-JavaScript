@@ -1,22 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+  --green: #A6E25E;
+  --purple: #8D53FF;
+  --pink: #DA82CC;
+  --yellow: #FEDE65;
+  --black: #060606;
+  --white: #F0F0F0;
+}
+
 html{
   font-family: 'Montserrat', sans-serif;
-  font-weight: 0.400;
-  /* background-color: black; */
+  font-weight: 500;
+  background-color: var(--white);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid;
+  box-shadow: 5px 5px var(--black);
+  background-color: var(--green);
+  gap: 10px;
+}
+
 button{
   height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   width: 50px;
+  border: 2px solid var(--black);
+  box-shadow: 2.5px 2.5px var(--black);
+}
+
+button:hover{
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+.number{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .answer{
-  border: 1px solid;
-  width: 210px;
+  border: 2px solid;
+  width: 204.5px;
   height: 225px;
+  padding: 10px;
+  box-shadow: 3px 3px var(--black);
+  background-color: var(--white);
 }
 
 .enter{
@@ -25,5 +72,64 @@ button{
 }
 
 .ac{
-  width: 158.5px;
+  width: 169.5px;
+  background-color: var(--yellow);
+}
+
+.equal{
+  background-color: var(--pink);
+}
+
+.gap{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0px;
+  right: 0px;
+  background-color: var(--purple);
+}
+footer span{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--white);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+footer p{
+  color: var(--white);
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding-bottom: 40px;
+}
+.socia-foot{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.socia-foot a{
+  font-size: 1rem;
+  background-color: var(--yellow);
+  box-shadow: 2px 2px var(--black);
+  padding: 10px;
+  border: 2px solid var(--black);
+  color: var(--black);
+}
+.socia-foot a:hover{
+  color: var(--white);
+  background-color: var(--pink);
+}
+@media print{
+  footer{
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
 }

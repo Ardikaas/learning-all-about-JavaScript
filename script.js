@@ -79,17 +79,29 @@ function calc(){
     total = x + y
     document.getElementById("total").innerHTML = total
     tambah == false
+    kurang == false
+    kali == false
+    bagi == false
   }else if (kurang == true){
     total = x - y
     document.getElementById("total").innerHTML = total
+    tambah == false
     kurang == false
+    kali == false
+    bagi == false
   }else if (kali == true){
     total = x * y
     document.getElementById("total").innerHTML = total
+    tambah == false
+    kurang == false
     kali == false
+    bagi == false
   }else if (bagi == true){
     total = x / y
     document.getElementById("total").innerHTML = total
+    tambah == false
+    kurang == false
+    kali == false
     bagi == false
   }
 }
@@ -98,4 +110,8 @@ function ac(){
   angka.innerHTML = ""
   document.getElementById("operasi").innerHTML = ""
   document.getElementById("total").innerHTML = ""
+  tambah == false
+  kurang == false
+  kali == false
+  bagi == false
 }

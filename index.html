@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>JavaScript</title>
 </head>
 <body>
-  <div class="card">
-    <div>
+  <div class="container">
+    <div class="card">
       <div class="answer">
         <p>masuk</p>
         <p id="angka"></p>
@@ -19,37 +20,55 @@
         <p id="total"></p>
       </div>
       <div class="number">
-        <div>
+        <div class="gap">
           <button class="ac" onclick="ac()">AC</button>
           <button id="sum">+</button>
         </div>
-        <div>
+        <div class="gap">
           <button onclick="one()">1</button>
           <button onclick="two()">2</button>
           <button onclick="three()">3</button>
           <button id="subtract">-</button>
         </div>
-        <div>
+        <div class="gap">
           <button onclick="four()">4</button>
           <button onclick="five()">5</button>
           <button onclick="six()">6</button>
           <button id="time">*</button>
         </div>
-        <div>
+        <div class="gap">
           <button onclick="seven()">7</button>
           <button onclick="eight()">8</button>
           <button onclick="nine()">9</button>
           <button id="divide">/</button>
         </div>
-        <div>
+        <div class="gap">
           <button onclick="oposite()">+\-</button>
           <button onclick="zero()">0</button>
           <button onclick="comma()">.</button>
-          <button onclick="calc()">=</button>
+          <button class="equal" onclick="calc()">=</button>
         </div>
       </div>
     </div>
   </div>
+  <footer>
+    <span>Ardikaas</span>
+    <div class="socia-foot">
+      <a href="https://www.instagram.com/ardikaas_/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a id="git" href="https://github.com/Ardikaas" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a id="yt" href="https://www.youtube.com/@ardikaaji" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a id="twt" href="https://twitter.com/ar_as30" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+    </div>
+    <p>&copy; 2023 Ardikaas.inc. All rights reserved </p>
+  </footer>
 </body>
 <script src="script.js"></script>
 </html>
