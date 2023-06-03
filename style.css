@@ -16,5 +16,14 @@ button{
 .answer{
   border: 1px solid;
   width: 210px;
-  height: 150px;
+  height: 225px;
+}
+
+.enter{
+  width: 213px;
+  height: 50px;
+}
+
+.ac{
+  width: 158.5px;
 }

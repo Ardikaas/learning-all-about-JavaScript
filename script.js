@@ -1,5 +1,3 @@
-var hasil = 0; 
-
 function one(){
   document.getElementById("angka").innerHTML += "1";
 }
@@ -33,40 +31,62 @@ function zero(){
 function comma(){
   document.getElementById("angka").innerHTML += ".";
 }
-function sum(){
-  var x = document.getElementById("angka").innerHTML;
-  document.getElementById("operasi").innerHTML = "+";
-  document.getElementById("angka").innerHTML = "";
-  var pisah = parseFloat(x);
-  hasil += pisah;
-  document.getElementById("total").innerHTML = hasil;
-}
-function subtract(){
-  var x = document.getElementById("angka").innerHTML;
-  document.getElementById("operasi").innerHTML = "-";
-  document.getElementById("angka").innerHTML = "";
-  var pisah = parseFloat(x);
-  hasil -= pisah;
-  document.getElementById("total").innerHTML = hasil;
-}
-function time(){
-  var x = document.getElementById("angka").innerHTML;
-  document.getElementById("operasi").innerHTML = "*";
-  document.getElementById("angka").innerHTML = "";
-  var pisah = parseFloat(x);
-  hasil *= pisah;
-  document.getElementById("total").innerHTML = hasil;
-}
-function divide(){
-  var x = document.getElementById("angka").innerHTML;
-  document.getElementById("operasi").innerHTML = "/";
-  document.getElementById("angka").innerHTML = "";
-  var pisah = parseFloat(x);
-  hasil /= pisah;
-  document.getElementById("total").innerHTML = hasil;
-}
-function ambil(){
-  document.getElementById("angka").innerHTML = "";
-  document.getElementById("operasi").innerHTML = "";
-  document.getElementById("total").innerHTML = hasil;
+var x;
+var y;
+var total;
+var tambah;
+var kurang;
+var kali;
+var bagi;
+var angka = document.getElementById("angka")
+
+// var sum;
+document.getElementById("sum").addEventListener("click", function(){
+  tambah = true;
+  x = parseFloat(angka.innerHTML)
+  angka.innerHTML = ""
+  console.log("x = " + x)
+});
+
+document.getElementById("subtract").addEventListener("click", function(){
+  kurang = true;
+  x = parseFloat(angka.innerHTML)
+  angka.innerHTML = ""
+  console.log("x = " + x)
+});
+
+document.getElementById("time").addEventListener("click", function(){
+  kali = true;
+  x = parseFloat(angka.innerHTML)
+  angka.innerHTML = ""
+  console.log("x = " + x)
+});
+
+document.getElementById("divide").addEventListener("click", function(){
+  bagi = true;
+  x = parseFloat(angka.innerHTML)
+  angka.innerHTML = ""
+  console.log("x = " + x)
+});
+
+function calc(){
+  y = parseFloat(angka.innerHTML)
+  console.log("y = " + y) 
+  if (tambah == true){
+    total = x + y
+    document.getElementById("total").innerHTML = total
+    tambah == false
+  }else if (kurang == true){
+    total = x - y
+    document.getElementById("total").innerHTML = total
+    kurang == false
+  }else if (kali == true){
+    total = x * y
+    document.getElementById("total").innerHTML = total
+    kali == false
+  }else if (bagi == true){
+    total = x / y
+    document.getElementById("total").innerHTML = total
+    bagi == false
+  }
 }
