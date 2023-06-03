@@ -43,35 +43,38 @@ var angka = document.getElementById("angka")
 // var sum;
 document.getElementById("sum").addEventListener("click", function(){
   tambah = true;
+  document.getElementById("operasi").innerHTML = "+"
   x = parseFloat(angka.innerHTML)
+  document.getElementById("total").innerHTML = x
   angka.innerHTML = ""
-  console.log("x = " + x)
 });
 
 document.getElementById("subtract").addEventListener("click", function(){
   kurang = true;
+  document.getElementById("operasi").innerHTML = "-"
   x = parseFloat(angka.innerHTML)
+  document.getElementById("total").innerHTML = x
   angka.innerHTML = ""
-  console.log("x = " + x)
 });
 
 document.getElementById("time").addEventListener("click", function(){
   kali = true;
+  document.getElementById("operasi").innerHTML = "*"
   x = parseFloat(angka.innerHTML)
+  document.getElementById("total").innerHTML = x
   angka.innerHTML = ""
-  console.log("x = " + x)
 });
 
 document.getElementById("divide").addEventListener("click", function(){
   bagi = true;
+  document.getElementById("operasi").innerHTML = "/"
   x = parseFloat(angka.innerHTML)
+  document.getElementById("total").innerHTML = x
   angka.innerHTML = ""
-  console.log("x = " + x)
 });
 
 function calc(){
-  y = parseFloat(angka.innerHTML)
-  console.log("y = " + y) 
+  y = parseFloat(angka.innerHTML) 
   if (tambah == true){
     total = x + y
     document.getElementById("total").innerHTML = total
@@ -89,4 +92,10 @@ function calc(){
     document.getElementById("total").innerHTML = total
     bagi == false
   }
+}
+
+function ac(){
+  angka.innerHTML = ""
+  document.getElementById("operasi").innerHTML = ""
+  document.getElementById("total").innerHTML = ""
 }
