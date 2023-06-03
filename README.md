@@ -16,3 +16,9 @@ Here are some key features and concepts related to JavaScript:
 JavaScript has become an essential part of web development due to its versatility and wide browser support. It enables the creation of interactive web applications, games, mobile apps (using frameworks like React Native), and even desktop applications (using frameworks like Electron).
 
 It's worth noting that JavaScript is distinct from Java, despite the similar name. They are separate programming languages with different syntax, use cases, and underlying technologies.
+
+
+## url
+well..
+i've just made simple calculator (sadly it still have bugs :')
+check this out : https://ardikaas.github.io/learning-all-about-JavaScript/
