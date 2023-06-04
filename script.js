@@ -115,3 +115,18 @@ function ac(){
   kali == false
   bagi == false
 }
+
+const KEY = "ff2a788310eb4dfcba775839230406"
+const URL = "https://api.weatherapi.com/v1/current.json"
+
+const search = document.querySelector(".search input")
+const btn = document.querySelector(".search button")
+
+async function weather(city){
+  const request = await fetch(URL + "?key=${KEY}" + "&q=${locate}")
+  
+}
+
+btn.addEventListener("click", ()=>{
+  weather(search.value);
+});
