@@ -122,9 +122,14 @@ const URL = "https://api.weatherapi.com/v1/current.json"
 const search = document.querySelector(".search input")
 const btn = document.querySelector(".search button")
 
-async function weather(city){
-  const request = await fetch(URL + "?key=${KEY}" + "&q=${locate}")
-  
+async function weather(locate){
+  const request = await fetch(URL + "?key=" + KEY + "&q=" + locate)
+  var data = await request.json()
+
+  document.querySelector(".cityname").innerHTML = data.location.name
+  document.querySelector(".temp").innerHTML = data.current.temp_c + " °C"
+  document.getElementById("humi").innerHTML = data.current.humidity + "%"
+  document.getElementById("wind").innerHTML = data.current.wind_kph + " km/h"
 }
 
 btn.addEventListener("click", ()=>{
