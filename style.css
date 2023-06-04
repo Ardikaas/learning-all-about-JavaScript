@@ -19,7 +19,8 @@ html{
 
 .container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 50px;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -84,6 +85,28 @@ button:hover{
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchico{
+  color: var(--black);
+  background-color: var(--white);
+  padding: 2px;
+  border: 2px solid var(--black);
+  box-shadow: 2px 2px var(--black);
+}
+
+.weather-card{
+  padding: 20px;
+  border: 2px solid var(--black);
+  box-shadow: 5px 5px var(--black);
+  background-color: var(--purple);
 }
 
 footer {
