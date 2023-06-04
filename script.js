@@ -128,8 +128,8 @@ async function weather(locate){
 
   document.querySelector(".cityname").innerHTML = data.location.name
   document.querySelector(".temp").innerHTML = data.current.temp_c + " °C"
-  document.getElementById("humi").innerHTML = data.current.humidity + "%"
-  document.getElementById("wind").innerHTML = data.current.wind_kph + " km/h"
+  document.querySelector(".humi").innerHTML = data.current.humidity + "%"
+  document.querySelector(".wind").innerHTML = data.current.wind_kph + " km/h"
 }
 
 btn.addEventListener("click", ()=>{
