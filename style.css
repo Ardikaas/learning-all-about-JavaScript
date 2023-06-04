@@ -9,6 +9,19 @@
   --white: #F0F0F0;
 }
 
+h1{
+  margin: 0;
+}
+h4{
+  margin: 0;
+}
+h5{
+  margin: 0;
+}
+h6{
+  margin: 0;
+}
+
 html{
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -107,7 +120,49 @@ button:hover{
   border: 2px solid var(--black);
   box-shadow: 5px 5px var(--black);
   background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
+
+.search input{
+  height: 45px;
+  border: 2px solid var(--black);
+  box-shadow: 2px 2px var(--black);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 15px;
+}
+
+.detcon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  color: var(--black);
+  background-color: #A6E25E;
+  padding: 5px;
+  border: 2px solid var(--black);
+  box-shadow: 2px 2px var(--black);
+}
+
 
 footer {
   position: absolute;
