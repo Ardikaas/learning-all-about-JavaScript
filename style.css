@@ -163,6 +163,12 @@ button:hover{
   box-shadow: 2px 2px var(--black);
 }
 
+.btc-card{
+  background-color: var(--yellow);
+  border: 2px solid var(--black);
+  box-shadow: 5px 5px var(--black);
+  padding: 20px;
+}
 
 footer {
   position: absolute;

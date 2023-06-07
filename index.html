@@ -10,74 +10,88 @@
 </head>
 <body>
   <div class="container">
-    <div class="card">
-      <div class="answer">
-        <p>masuk</p>
-        <p id="angka"></p>
-        <p>operasi</p>
-        <p id="operasi"></p>
-        <p>total</p>
-        <p id="total"></p>
-      </div>
-      <div class="number">
-        <div class="gap">
-          <button class="ac" onclick="ac()">AC</button>
-          <button id="sum">+</button>
+    <div class="kolom-1">
+      <div class="card">
+        <div class="answer">
+          <p>masuk</p>
+          <p id="angka"></p>
+          <p>operasi</p>
+          <p id="operasi"></p>
+          <p>total</p>
+          <p id="total"></p>
         </div>
-        <div class="gap">
-          <button onclick="one()">1</button>
-          <button onclick="two()">2</button>
-          <button onclick="three()">3</button>
-          <button id="subtract">-</button>
-        </div>
-        <div class="gap">
-          <button onclick="four()">4</button>
-          <button onclick="five()">5</button>
-          <button onclick="six()">6</button>
-          <button id="time">*</button>
-        </div>
-        <div class="gap">
-          <button onclick="seven()">7</button>
-          <button onclick="eight()">8</button>
-          <button onclick="nine()">9</button>
-          <button id="divide">/</button>
-        </div>
-        <div class="gap">
-          <button onclick="oposite()">+\-</button>
-          <button onclick="zero()">0</button>
-          <button onclick="comma()">.</button>
-          <button class="equal" onclick="calc()">=</button>
+        <div class="number">
+          <div class="gap">
+            <button class="ac" onclick="ac()">AC</button>
+            <button id="sum">+</button>
+          </div>
+          <div class="gap">
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="three()">3</button>
+            <button id="subtract">-</button>
+          </div>
+          <div class="gap">
+            <button onclick="four()">4</button>
+            <button onclick="five()">5</button>
+            <button onclick="six()">6</button>
+            <button id="time">*</button>
+          </div>
+          <div class="gap">
+            <button onclick="seven()">7</button>
+            <button onclick="eight()">8</button>
+            <button onclick="nine()">9</button>
+            <button id="divide">/</button>
+          </div>
+          <div class="gap">
+            <button onclick="oposite()">+\-</button>
+            <button onclick="zero()">0</button>
+            <button onclick="comma()">.</button>
+            <button class="equal" onclick="calc()">=</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="weather-card">
-      <div class="search">
-        <input type="text" placeholder="Enter city name" spellcheck="true">
-        <button class="searchico">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
-      <div class="weather">
-        <div class="kondisi">
-          <i class="fa-solid fa-sun fa-2xl"></i>
+    <div class="kolom-2">
+      <div class="weather-card">
+        <div class="search">
+          <input type="text" placeholder="Enter city name" spellcheck="true">
+          <button class="searchico">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        <h1 class="temp">24°C</h1>
-        <h2 class="cityname">Cilegon</h2>
-        <div class="detail">
-          <div class="detcon">
-            <i class="fa-solid fa-water fa-2xl"></i>
-            <div class="detex">
-              <h6 class="humi">50%</h6>
-              <h6>Humidity</h6>
+        <div class="weather">
+          <div class="kondisi">
+            <i class="fa-solid fa-sun fa-2xl"></i>
+          </div>
+          <h1 class="temp">24°C</h1>
+          <h2 class="cityname">Cilegon</h2>
+          <div class="detail">
+            <div class="detcon">
+              <i class="fa-solid fa-water fa-2xl"></i>
+              <div class="detex">
+                <h6 class="humi">50%</h6>
+                <h6>Humidity</h6>
+              </div>
+            </div>
+            <div class="detcon">
+              <i class="fa-sharp fa-solid fa-wind fa-2xl"></i>
+              <div class="detex">
+                <h6 class="wind">15 km/h</h6>
+                <h6>Wind Speed</h6>
+              </div>
             </div>
           </div>
-          <div class="detcon">
-            <i class="fa-sharp fa-solid fa-wind fa-2xl"></i>
-            <div class="detex">
-              <h6 class="wind">15 km/h</h6>
-              <h6>Wind Speed</h6>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div class="btc-card">
+        <div>
+          <i class="fa-brands fa-bitcoin"></i>
+          <h2>Bitcoin</h2>
+          <span>Rate : </span>
+          <span>26,943.5063</span>
+          <h6>Last update*</h6>
+          <h6>Jun 7, 2023 05:05:00 UTC </h6>
         </div>
       </div>
     </div>
