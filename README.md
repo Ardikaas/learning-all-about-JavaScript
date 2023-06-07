@@ -20,5 +20,6 @@ It's worth noting that JavaScript is distinct from Java, despite the similar nam
 
 ## url
 well.. <br />
-i've just made simple calculator (sadly it still have bugs :') <br />
+i've just made simple calculator, sadly it still have bugs :') <br />
+and i made simple weather app <br />
 check this out : https://ardikaas.github.io/learning-all-about-JavaScript/
