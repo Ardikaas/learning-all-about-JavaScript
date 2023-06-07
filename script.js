@@ -135,3 +135,20 @@ async function weather(locate){
 btn.addEventListener("click", ()=>{
   weather(search.value);
 });
+
+
+const reqBTC = new XMLHttpRequest();
+const BTCURL = "https://api.coindesk.com/v1/bpi/currentprice.json"
+reqBTC.open("GET", BTCURL, true);
+reqBTC.send();
+
+function BTC(){
+  setInterval(()=>{
+    var data = JSON.parse(reqBTC.responseText);
+    console.log(data);
+  }, 5000);
+}
+
+document.addEventListener("DOMContentLoaded", ()=>{
+  BTC();
+});
